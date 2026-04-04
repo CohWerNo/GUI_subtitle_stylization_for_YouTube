@@ -2,7 +2,7 @@
     display:flex;
     width:100%;
     min-width:600px;
-    height:calc(100vh - 20px);
+    height:calc(100vh - 20px - 60px);
     gap:10px;
     .styleWindow{
         display:inline-block;
