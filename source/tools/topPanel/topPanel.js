@@ -1,4 +1,5 @@
 /**
+ * Верхняя панель
  * 
  */
 class TopPanel {
@@ -9,7 +10,9 @@ class TopPanel {
         return this.#mainWindow;
     }
 
+    /** Сдесь будут находится все элементы, что находятся в понели */
     #allButton = []
+    /** Сдесь будут находится все элементы, что находятся в понели */
     get allButton() {
         return this.#allButton;
     }
