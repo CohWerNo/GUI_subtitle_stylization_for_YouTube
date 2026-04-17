@@ -26,7 +26,7 @@ class TopPanel {
      * string> text = "Button" -- назначает текст кнопки\
      * function> click -- переданная функция будет активироватся, когда пользователь нажимает на текст
      * 
-     * return - "HTML" элемент с текстом
+     * return - элемент с текстом
      */
     addTextButton(text="Button", click) {
         // создание основной кнопки
