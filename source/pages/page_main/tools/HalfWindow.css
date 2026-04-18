@@ -8,7 +8,8 @@
     .content{
         background-color:#aaa;
         width:100%;
-        height:calc(100% - var(--title-height-size));
+        /* "- 10px" нужны для улудшения вилуализаций */
+        height:calc(100% - var(--title-height-size) - 10px);
         overflow-x:hidden;
         overflow-y:scroll;
     }
