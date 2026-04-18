@@ -1,0 +1,10 @@
+.windowStyle{
+    .content{
+        direction:rtl;
+        background-color:#aaf;
+    }
+    .title{
+        text-align:right;
+        background-color:#88f;
+    }
+}

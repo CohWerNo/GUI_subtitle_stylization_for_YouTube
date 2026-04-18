@@ -1,0 +1,9 @@
+.windowSubtitles{
+    .content{
+        background-color:#faa;
+    }
+    .title{
+        text-align:left;
+        background-color:#f88;
+    }
+}

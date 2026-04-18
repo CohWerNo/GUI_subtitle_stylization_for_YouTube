@@ -1,0 +1,23 @@
+.halfWindow{
+    display:inline-block;
+    width:100%;
+    height:100%;
+    font-family:Arial, Helvetica, sans-serif;
+    text-align:left;
+    --title-height-size:2em;
+    .content{
+        background-color:#aaa;
+        width:100%;
+        height:calc(100% - var(--title-height-size));
+        overflow-x:hidden;
+        overflow-y:scroll;
+    }
+    .title{
+        background-color:#888;
+        width:100%;
+        color:#000;
+        font-size:var(--title-height-size);
+        display:block;
+        text-align:center;
+    }
+}
