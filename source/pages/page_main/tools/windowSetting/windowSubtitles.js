@@ -1,3 +1,6 @@
+/**
+ * Создает окно для редоктарования субтитров
+ */
 class WindowSubtitles extends HalfWindow{
     constructor() {
         super("Subtitles");
