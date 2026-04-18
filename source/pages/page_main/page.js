@@ -1,7 +1,7 @@
+/**
+ * Создает оснавную страницу
+ */
 class PAGE_SITE{
-    /**
-     * Создает оснавную страницу
-     */
     static mainWindow() {
         const topTools = new TopPanel();
         topTools.addTextButton("Save");
