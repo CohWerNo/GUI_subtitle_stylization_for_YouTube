@@ -1,4 +1,17 @@
 .windowStyle{
+    guiTools{
+        justify-content:right;
+        button{
+            border-radius:10px 0px 0px 10px;
+            background-color:#eef;
+            &:hover{
+                background-color:#ddf;
+            }
+            &:active{
+                background-color:#fff;
+            }
+        }
+    }
     .content{
         direction:rtl;
         background-color:#aaf;

@@ -1,4 +1,17 @@
 .windowSubtitles{
+    guiTools{
+        justify-content:left;
+        button{
+            border-radius:0px 10px 10px 0px;
+            background-color:#fee;
+            &:hover{
+                background-color:#fdd;
+            }
+            &:active{
+                background-color:#fff;
+            }
+        }
+    }
     .content{
         background-color:#faa;
     }

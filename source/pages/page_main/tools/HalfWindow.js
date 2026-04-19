@@ -1,7 +1,7 @@
 /**
  * Создает окно, где контент можно поместить вертикально
  * 
- * string> titleText="title" -- задает название окна
+ * String $titleText="title" -- задает название окна
  */
 class HalfWindow{
     /** основное окно, где распаложены остальные элементы */
@@ -24,7 +24,7 @@ class HalfWindow{
     }
 
     constructor(titleText="title") {
-        this.#mainWindow.setAttribute("class", "halfWindow");
+        this.#mainWindow.setAttribute("class", "HalfWindow");
         this.#contentWindow.setAttribute("class", "content");
         this.#title.setAttribute("class", "title");
         this.#title.textContent = titleText;
