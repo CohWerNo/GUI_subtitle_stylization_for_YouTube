@@ -14,11 +14,11 @@
         overflow-y:scroll;
     }
     .title{
+        color:#000;
         background-color:#888;
         width:100%;
-        color:#000;
+        text-align:center;
         font-size:var(--title-height-size);
         display:block;
-        text-align:center;
     }
 }
