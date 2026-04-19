@@ -1,7 +1,7 @@
 /**
  * Создает окно которое можно расположите вертикально. Также на этом окне можно создать настройки для субтитров
  * 
- * String $titleText="title" -- задаёт загаловок для окна 
+ * `<String> titleText="title" -- задаёт загаловок для окна`
  */
 class HalfWindow_SettingsSubtitles extends HalfWindow {
     /** Здесь находятся все инструменты видимые пользщователю */
@@ -27,6 +27,11 @@ class HalfWindow_SettingsSubtitles extends HalfWindow {
 
     /**
      * Добавляет кнопку в список инструментов
+     * 
+     * `<String> name="name" -- задаёт имя для объектного массива`\
+     * `<String> textOnButton="PlaceHolder" -- задаёт текст для кнопки`
+     * 
+     * `return <HTMLButtonElement> - кнопка, которая расположена на панеле инструментов`
      */
     addTool_Button(name="name", textOnButton="PlaceHolder") {
         const button = document.createElement("button");
@@ -35,5 +40,7 @@ class HalfWindow_SettingsSubtitles extends HalfWindow {
         this.#guiTools.tools[name] = {}
         this.#guiTools.tools[name].element = button
         this.#guiTools.window.append(button);
+
+        return button;
     }
 }

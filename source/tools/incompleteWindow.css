@@ -1,0 +1,8 @@
+.IncompleteWindow{
+    display:inline-block;
+    position:absolute;
+    left:25vw;
+    top:25vh;
+    width:25vw;
+    height:25vh;
+}
