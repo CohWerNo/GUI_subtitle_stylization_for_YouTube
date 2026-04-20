@@ -17,12 +17,12 @@ class HalfWindow_SettingsSubtitles extends HalfWindow {
     }
 
     constructor(titleText="title") {
-        super(titleText)
+        super(titleText);
         
-        this.mainWindow.classList.add("HalfWindow_SettingsSubtitles")
+        this.mainWindow.classList.add("HalfWindow_SettingsSubtitles");
         
-        this.addTool_Button("addWindow", "Create new window")
-        this.contentWindow.append(this.#guiTools.window)
+        this.addTool_Button("addWindow", "Create new window");
+        this.contentWindow.append(this.#guiTools.window);
     }
 
     /**
@@ -37,8 +37,8 @@ class HalfWindow_SettingsSubtitles extends HalfWindow {
         const button = document.createElement("button");
         button.textContent = textOnButton;
         
-        this.#guiTools.tools[name] = {}
-        this.#guiTools.tools[name].element = button
+        this.#guiTools.tools[name] = {};
+        this.#guiTools.tools[name].element = button;
         this.#guiTools.window.append(button);
 
         return button;
