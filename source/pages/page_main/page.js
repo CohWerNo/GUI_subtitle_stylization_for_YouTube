@@ -7,9 +7,14 @@ class PAGE_SITE{
      */
     static mainWindow() {
         const topTools = new TopPanel();
-        topTools.addTextButton("Save");
-        topTools.addTextButton("Load");
-        topTools.addTextButton("Render");
+        const button_load = topTools.addTextButton("Load");
+        const button_save = topTools.addTextButton("Save");
+        const button_render = topTools.addTextButton("Render");
+        button_render.addEventListener("click", function() {
+            const class_window = new incompleteWindow();
+            
+            class_window.openWindow();
+        });
 
         /** Основное окно */
         const mainWindow = document.createElement("div");

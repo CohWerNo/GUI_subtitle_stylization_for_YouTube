@@ -1,8 +1,47 @@
 .IncompleteWindow{
     display:inline-block;
     position:absolute;
-    left:25vw;
-    top:25vh;
-    width:25vw;
-    height:25vh;
+    left:-10px;
+    top:-10px;
+    width:calc(100vw + 10px);
+    height:calc(100vh + 10px);
+    background-color:#0005;
+    window{
+        display:inline-block;
+        position:absolute;
+        left:15vw;
+        top:15vh;
+        width:75vw;
+        height:75vh;
+        color:#000;
+        background-color:#fff;
+        --topTools-height:50px;
+        topTools{
+            display:flex;
+            flex-direction:row-reverse;
+            justify-content:flex-start;
+            align-items:center;
+            width:100%;
+            height:var(--topTools-height);
+            background-color:#fff;
+            .exit{
+                display:flex;
+                justify-content:center;
+                align-items:center;
+                width:var(--topTools-height);
+                height:var(--topTools-height);
+                background-color:#ccc;
+                &:hover{
+                    cursor:pointer;
+                    background-color:#f00;
+                }
+            }
+        }
+        windowContent{
+            display:block;
+            width:100%;
+            height:calc(100% - var(--topTools-height));
+            background-color:#fff;
+        }
+    }
 }
