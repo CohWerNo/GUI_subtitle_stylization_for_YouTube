@@ -17,6 +17,7 @@
         background-color:#888;
         width:100%;
         text-align:center;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         font-size:var(--title-height-size);
         display:block;
     }
