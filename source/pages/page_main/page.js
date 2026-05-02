@@ -2,6 +2,9 @@
  * Создает оснавную страницу
  */
 class PAGE_SITE{
+    /**
+     * Основная страница для редоктированиясубтитров
+     */
     static mainWindow() {
         const topTools = new TopPanel();
         topTools.addTextButton("Save");
@@ -20,6 +23,7 @@ class PAGE_SITE{
         mainWindow.append(testWindow.mainWindow)
 
         document.body.append(topTools.mainWindow, mainWindow)
+        
     }
 }
 
