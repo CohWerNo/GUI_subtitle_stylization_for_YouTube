@@ -37,11 +37,19 @@ class HalfWindow{
         const title = document.createElement("div")
         title.setAttribute("class", "title");
         title.textContent = titleText;
-        Object.defineProperty(this.#titleBar_elements, "title", {value:title, writable:false})
-        this.#titleBar_window.append(title)
-        
-        console.log(this.#titleBar_elements);
+        this.titleBar_addElement("title", title)
         
         this.#mainWindow.append(this.#titleBar_window, this.#contentWindow);
+    }
+
+    /**
+     * Добавляет елемент в "titleBar"
+     * 
+     * `<string> propertyKey = "property" -- устанавливает ключь на элемент, по которому можно найти элемент в "titleBar_elements"`\
+     * `<HTMLElement> value = HTMLElement -- переданный элемент будет вставлен в "titleBar_window"`
+     */
+    titleBar_addElement(propertyKey="property", value=HTMLElement) {
+        Object.defineProperty(this.#titleBar_elements, propertyKey, {value:value, writable:false});
+        this.#titleBar_window.append(value);
     }
 }
