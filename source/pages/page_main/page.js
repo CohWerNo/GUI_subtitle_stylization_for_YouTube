@@ -15,6 +15,9 @@ class PAGE_SITE{
         const windowStyle_Class = new WindowStyle(); // класс с окном со стилями
         const windowSubtitles_Class = new WindowSubtitles(); // класс с окном для субтитров
         mainWindow.append(windowStyle_Class.mainWindow, windowSubtitles_Class.mainWindow)
+        
+        const testWindow = new HalfWindow_SettingsSubtitles()
+        mainWindow.append(testWindow.mainWindow)
 
         document.body.append(topTools.mainWindow, mainWindow)
     }
