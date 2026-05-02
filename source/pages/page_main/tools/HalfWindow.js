@@ -16,19 +16,27 @@ class HalfWindow{
     get contentWindow() {
         return this.#contentWindow;
     }
-    /** загаловок основного окна */
-    #title = document.createElement("div");
-    /** загаловок основного окна */
-    get title() {
-        return this.#title;
+    /** Строка заголовка */
+    #titleBar = {};
+    /** Строка заголовка */
+    get titleBar() {
+        return this.#titleBar;
     }
 
     constructor(titleText="title") {
         this.#mainWindow.setAttribute("class", "HalfWindow");
         this.#contentWindow.setAttribute("class", "content");
-        this.#title.setAttribute("class", "title");
-        this.#title.textContent = titleText;
         
-        this.#mainWindow.append(this.#title, this.#contentWindow);
+        /** основное окно "Строки загаловка" */
+        const titleBarWindow = document.createElement("titleBar");
+        Object.defineProperty(this.#titleBar, "mainWindow", {value:titleBarWindow, writable:false})
+        /** загаловок основного окна */
+        const title = document.createElement("div")
+        title.setAttribute("class", "title");
+        title.textContent = titleText;
+        Object.defineProperty(this.#titleBar, title, {value:title, writable:false})
+        titleBarWindow.append(title)
+        
+        this.#mainWindow.append(titleBarWindow, this.#contentWindow);
     }
 }

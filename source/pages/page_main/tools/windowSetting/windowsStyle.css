@@ -16,8 +16,12 @@
         direction:rtl;
         background-color:#aaf;
     }
-    .title{
-        text-align:right;
+    titleBar{
         background-color:#88f;
+        justify-content:flex-end;
+        .title{
+            padding-right:5px;
+            background-color:#88f;
+        }
     }
 }

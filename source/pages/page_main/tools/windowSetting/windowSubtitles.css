@@ -15,8 +15,12 @@
     .content{
         background-color:#faa;
     }
-    .title{
-        text-align:left;
+    titleBar{
         background-color:#f88;
+        justify-content:flex-start;
+        .title{
+            padding-left:5px;
+            background-color:#f88;
+        }
     }
 }
